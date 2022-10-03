@@ -1,50 +1,56 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
-import colorSharp2 from "../assets/img/bg-1.png";
+import ssImg1 from "../assets/img/ss-22.png";
+import ssImg2 from "../assets/img/ss-21.png";
+import ssImg3 from "../assets/img/ss-19.png";
+import fwImg1 from "../assets/img/fw-22.png";
+import fwImg2 from "../assets/img/fw-21.png";
+import fwImg3 from "../assets/img/fw-20.png";
 // import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
-  const projects = [
+  const fw_projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Revival",
+      description: "TREND F/W 22",
+      imgUrl: fwImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Dream Theory",
+      description: "TREND F/W 21",
+      imgUrl: fwImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Duality",
+      description: "TREND F/W 20",
+      imgUrl: fwImg3,
+    },
+  ]; 
+
+  const ss_projects = [
+    {
+      title: "Tide",
+      description: "TREND S/S 22",
+      imgUrl: ssImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Unveiled",
+      description: "TREND S/S 21",
+      imgUrl: ssImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "The Shift",
+      description: "TREND S/S 19",
+      imgUrl: ssImg3,
     },
   ];
 
   return (
     <section className="project" id="project">
+
       <Container>
         <Row>
           <Col size={12}>
@@ -56,36 +62,47 @@ export const Projects = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Fall</Nav.Link>
+                      <Nav.Link eventKey="first">S/S</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Winter</Nav.Link>
+                      <Nav.Link eventKey="second">F/W</Nav.Link>
                     </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Spring</Nav.Link>
-                    </Nav.Item>
+                    {/* <Nav.Item>
+                      <Nav.Link eventKey="third">Other</Nav.Link>
+                    </Nav.Item> */}
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
                       <Row>
+                          {
+                            ss_projects.map((ss_project, index) => {
+                              return (
+                                <ProjectCard
+                                  key={index}
+                                  {...ss_project}
+                                  />
+                              )
+                            })
+                          }
+                      </Row>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="second">
+                      <Row>
                         {
-                          projects.map((project, index) => {
+                          fw_projects.map((fw_project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
-                                {...project}
+                                {...fw_project}
                                 />
                             )
                           })
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
+                    {/* <Tab.Pane eventKey="third">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
+                    </Tab.Pane> */}
                   </Tab.Content>
                 </Tab.Container>
               </div>}
@@ -93,7 +110,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      
     </section>
   )
 }

@@ -5,6 +5,8 @@
 
 <a href="https://www.flaticon.com/free-icons/sunglasses" title="sunglasses icons">Sunglasses icons created by Freepik - Flaticon</a>
 
+https://danmarshall.github.io/google-font-to-svg-path/
+
 
 # Personal Portfolio Website in React
 
