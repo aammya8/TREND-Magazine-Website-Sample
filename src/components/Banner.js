@@ -15,7 +15,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "A place for all UCSD creatives", "A fashion magazine", "An art magazine", "A music magazine", "A lifestyle magazine" ];
+  const toRotate = [ "A fashion magazine", "A lifestyle magazine", "A place for all UCSD creatives" ];
   const period = 2000;
 
   useEffect(() => {
@@ -60,7 +60,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">TREND Magazine</span>
-                <h1>{`TREND. `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "A place for all UCSD creatives", "A fashion magazine", "An art magazine", "A music magazine", "A lifestyle magazine" ]'><span className="wrap">{text}</span></span></h1>
+                <h1>{`TREND. `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "A fashion magazine", "A lifestyle magazine", "A place for all UCSD creatives" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text.</p>
                   <button onClick={() => console.log('connect')}>Create with us!<ArrowRightCircle size={25} /></button>
               </div>}
