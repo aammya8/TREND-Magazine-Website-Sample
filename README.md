@@ -1,14 +1,14 @@
-# Attributions
+<!-- # Attributions
 <a href="https://www.flaticon.com/free-icons/magazine" title="magazine icons">Magazine icons created by Freepik - Flaticon</a>
 
 <a href="https://www.flaticon.com/free-icons/camera" title="camera icons">Camera icons created by Freepik - Flaticon</a>
 
 <a href="https://www.flaticon.com/free-icons/sunglasses" title="sunglasses icons">Sunglasses icons created by Freepik - Flaticon</a>
 
-https://danmarshall.github.io/google-font-to-svg-path/
+https://danmarshall.github.io/google-font-to-svg-path/ -->
 
 
-# Personal Portfolio Website in React
+# TREND Magazine Sample Website
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -17,10 +17,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Built using:
 
 - Front-end library: React
+- Email routing: Node and Express
 - CSS framework: React-bootstrap
 - CSS animations library: Animate.css
 
-In the /personal-portfolio, you can run:
+
+
+In the /portfolio-TREND-1 directory in terminal you can run:
 
 ### `npm start`
 
