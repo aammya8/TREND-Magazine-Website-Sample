@@ -15,6 +15,7 @@ https://danmarshall.github.io/google-font-to-svg-path/ -->
 ![Screen Shot 2022-10-07 at 10 50 47 PM](https://user-images.githubusercontent.com/79061216/194691447-fc578d05-3a21-4ce0-aded-9c4ad606b890.png)
 ![Screen Shot 2022-10-07 at 10 51 45 PM](https://user-images.githubusercontent.com/79061216/194691453-23ce1611-0591-47aa-aeba-4e08e6e0e701.png)
 ![Screen Shot 2022-10-07 at 10 53 07 PM](https://user-images.githubusercontent.com/79061216/194691455-6ed37a11-1c08-480d-829c-09f3f7f0b635.png)
+![Screen Shot 2022-10-07 at 10 55 05 PM](https://user-images.githubusercontent.com/79061216/194691505-82002e79-6a0e-4c1b-9bf0-b50bef767166.png)
 
 
 
