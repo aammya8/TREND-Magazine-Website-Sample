@@ -29,7 +29,7 @@ Contact/Newsletter/Footer:
 ![Screen Shot 2022-10-07 at 10 53 07 PM](https://user-images.githubusercontent.com/79061216/194691455-6ed37a11-1c08-480d-829c-09f3f7f0b635.png)  
   
 
-Small-sized screen:
+Small-sized screen: <br>
 ![Screen Shot 2022-10-07 at 10 55 05 PM](https://user-images.githubusercontent.com/79061216/194691505-82002e79-6a0e-4c1b-9bf0-b50bef767166.png)
 
 
